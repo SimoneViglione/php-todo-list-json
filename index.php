@@ -7,15 +7,16 @@
     <title>Todo List</title>
 </head>
 <body>
-    <div id="app">
-        <ul class="todolist"> 
-            <li v-for="todo in toDoList"> {{ todo }} </li>
-        </ul>
+    <main>
+        <div id="app">
+            <ul class="todolist"> 
+                <li v-for="todo in toDoList"> {{ todo }} </li>
+            </ul>
 
-        <input type="text" v-model="task">
-        <button type="submit"> Aggiungi </button>
-    </div>
-
+            <input type="text" v-model="task">
+            <button type="submit" @click="addTask"> Aggiungi </button>
+        </div>
+    </main>
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
