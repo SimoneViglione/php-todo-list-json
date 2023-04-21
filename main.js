@@ -26,7 +26,8 @@ createApp({
                 this.toDoList = response.data;
                 this.task= '';
             });
-        }
+        },
+        
     },
   mounted() {
     this.getToDoList();

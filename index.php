@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <main>
         <div id="app">
-            <ul class="todolist"> 
-                <li v-for="todo in toDoList"> {{ todo }} </li>
-            </ul>
+            <div class="container">
+                
+                    <h1> Todo List </h1>
 
-            <input type="text" v-model="task">
-            <button type="submit" @click="addTask"> Aggiungi </button>
+                    <ul class="todolist"> 
+                        <li v-for="todo in toDoList"> {{ todo }} </li>
+                    </ul>
+
+                    <input type="text" v-model="task" placeholder="aggiungi Task">
+                    <button type="submit" @click="addTask" > Aggiungi </button>
+                    </input>
+                
+            </div>
         </div>
     </main>
 
